@@ -317,7 +317,7 @@ if st.button("🚀 Analyze Repository", type="primary"):
             try:
 
                 response = requests.post(
-                    "http://127.0.0.1:8001/explain",
+                    "https://floors-teeth-alt-sheep.trycloudflare.com/explain",
                     json={
                         "github_url": github_url,
                         "temperature": 0.7,
@@ -432,7 +432,7 @@ if st.session_state["repository_analyzed"]:
             try:
 
                 response = requests.post(
-                    "http://127.0.0.1:8001/explain",
+                    "https://floors-teeth-alt-sheep.trycloudflare.com/explain",
                     json={
                         "github_url": github_url,
                         "temperature": temperature,
@@ -542,7 +542,7 @@ if st.session_state["repository_analyzed"]:
                 try:
 
                     response = requests.post(
-                        "http://127.0.0.1:8001/followup",
+                        "https://floors-teeth-alt-sheep.trycloudflare.com/followup",
                         json={
                             "repository_code": st.session_state[
                                 "repository_code"
